@@ -1,0 +1,109 @@
+.home-page {
+  min-height: 60vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero-icon-wrap {
+  margin: 0 auto 1.25rem;
+}
+
+.hero-icon {
+  /* Size + rounding handled by .app-icon; keep image rules minimal here */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #007AFF;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.cta-section {
+  margin: 3rem 0;
+}
+
+.app-store-button {
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.app-store-button:hover {
+  opacity: 0.8;
+}
+
+.app-store-badge {
+  height: 60px;
+  width: auto;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.feature p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .app-store-badge {
+    height: 50px;
+  }
+}
+
+
+

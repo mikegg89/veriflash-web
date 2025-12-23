@@ -1,0 +1,5 @@
+## Netlify SPA fallback
+## Allow direct navigation to client-side routes like /terms, /privacy, /license
+/*    /index.html   200
+
+
