@@ -5,7 +5,7 @@ Last updated: December 23, 2025
 ## Summary (plain English)
 
 - VeriFlash helps you fact-check claims. You can type a claim or extract text using on-device OCR.
-- Your fact-check history is primarily stored locally on your device for convenience.
+- **Privacy**: Uses OCR on your screenshot; a copy of your fact-check history is stored on your device and on the VeriFlash backend associated with a non-reversible hashed device identifier
 - **Your data is cleaned locally to remove system info before being verified by privacy-protected AI.**
 - When you run a fact-check, we send the claim text (or OCR-extracted text you choose to submit) to our backend to process and return a result.
 - If you enable push notifications, we store an APNs device token so we can notify you when queued fact-checks finish.
@@ -57,6 +57,7 @@ To provide fact-checking results, VeriFlash uses third-party AI providers (for e
 ## Data storage and retention
 
 - **Local history**: The app may store your recent fact-check history on-device.
+- **Backend history**: A copy of your fact-check history may be stored on the VeriFlash backend and associated with a non-reversible hashed device identifier.
 - **Backend processing**: We process claims on our servers and may retain limited request and result data for reliability, security, and abuse prevention.
 - **Push tokens**: Stored only to deliver notifications and may be disabled/removed when you unregister or stop using notifications.
 

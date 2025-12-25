@@ -31,6 +31,7 @@ VeriFlash ("we", "our", or "us") is committed to protecting your privacy. This P
 - Fact-check requests and results
 - Request timestamps
 - Processing times
+- **Privacy**: Uses OCR on your screenshot; a copy of your fact-check history is stored on your device and on the VeriFlash backend associated with a non-reversible hashed device identifier
 
 ### Authentication Data
 - Device identifiers
@@ -46,7 +47,8 @@ We use the information we collect to:
 
 ## Data Storage
 
-- All data is stored securely on our servers
+- A copy of your fact-check history may be stored on your device and on our servers (associated with a non-reversible hashed device identifier)
+- Other data is stored securely on our servers
 - Authentication tokens are hashed before storage
 - We retain request data for observability and abuse prevention
 
