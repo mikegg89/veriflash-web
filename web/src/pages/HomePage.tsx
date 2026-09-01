@@ -3,29 +3,35 @@ import { Helmet } from "react-helmet-async";
 import { canonicalForPath } from "../seo/site";
 
 export default function HomePage() {
+  const siteUrl = canonicalForPath("/");
+  const appIconUrl = `${siteUrl}Veriflash_app_icon.png`;
+
   return (
     <div className="home-page">
       <Helmet>
-        <title>VeriFlash - Fact-Checking Made Simple</title>
+        <title>VeriFlash | AI-Powered Fact-Checking for iPhone</title>
         <meta
           name="description"
-          content="VeriFlash helps you verify claims and fact-check information quickly and reliably."
+          content="VeriFlash is an iPhone app that helps you verify claims with AI-assisted fact-checks, source citations, and clear explanations."
         />
-        <link rel="canonical" href={canonicalForPath("/")} />
-        <meta property="og:title" content="VeriFlash - Fact-Checking Made Simple" />
+        <link rel="canonical" href={siteUrl} />
+        <meta property="og:title" content="VeriFlash | AI-Powered Fact-Checking for iPhone" />
         <meta
           property="og:description"
-          content="VeriFlash helps you verify claims and fact-check information quickly and reliably."
+          content="Verify claims with AI-assisted fact-checks, source citations, and clear explanations in the VeriFlash iPhone app."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={canonicalForPath("/")} />
-        <meta property="og:image" content={`${window.location.origin}/Veriflash_app_icon.png`} />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="VeriFlash - Fact-Checking Made Simple" />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:site_name" content="VeriFlash" />
+        <meta property="og:image" content={appIconUrl} />
+        <meta property="og:image:alt" content="VeriFlash app icon" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="VeriFlash | AI-Powered Fact-Checking for iPhone" />
         <meta
           name="twitter:description"
-          content="VeriFlash helps you verify claims and fact-check information quickly and reliably."
+          content="Verify claims with AI-assisted fact-checks, source citations, and clear explanations in the VeriFlash iPhone app."
         />
+        <meta name="twitter:image" content={appIconUrl} />
       </Helmet>
       <div className="container">
         <div className="hero">
@@ -76,6 +82,4 @@ export default function HomePage() {
     </div>
   );
 }
-
-
 
